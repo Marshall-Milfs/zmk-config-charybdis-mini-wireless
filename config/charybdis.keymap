@@ -69,7 +69,7 @@
         Setting {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF                    &rgb_ug RGB_EFR
-&trans  &trans        &trans        &trans        &bt BT_PRV    &bt BT_NXT        &none            &none            &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(221,100,58)  &rgb_ug RGB_COLOR_HSB(153,100,60)
+&trans  &trans        &trans        &trans        &bt BT_PRV    &bt BT_NXT        &rgb_ug RGB_TOG  &none            &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(221,100,58)  &rgb_ug RGB_COLOR_HSB(153,100,60)
 &trans  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL    &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(354,100,56)  &rgb_ug RGB_COLOR_HSB(34,100,50)
                                     &trans        &trans        &trans            &to 0            &sys_reset
             >;
