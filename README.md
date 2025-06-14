@@ -1,1 +1,1 @@
-# Charybdis Mini ZMK Configuration
+pmw3389 dmt 30y
