@@ -50,25 +50,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        u_lt: u_lt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "u_lt";
-            #binding-cells = <2>;
-            tapping_term_ms = <U_TAPPING_TERM>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-        };
-
-        Shift_Enter: Shift_Enter {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_ENTER";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <40>;
-            tapping-term-ms = <100>;
-        };
     };
 
     keymap {
@@ -79,7 +60,7 @@
 &kp ESC     &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U          &kp I      &kp O    &kp P          &kp BSPC
 &kp TAB     &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOS
 &kp RSHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH       &kp ENTER
-                          &kp LGUI  &kp SPACE  &mo 1    &mo 3  &kp BACKSPACE
+                          &kp LGUI  &kp SPACE  &mo 1    &to 2  &kp BACKSPACE
             >;
 
             label = "Base";
@@ -101,7 +82,7 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF                    &rgb_ug RGB_EFR
 &trans  &trans        &trans        &trans        &bt BT_PRV    &bt BT_NXT        &none            &none            &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(221,100,58)  &rgb_ug RGB_COLOR_HSB(153,100,60)
 &trans  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL    &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(354,100,56)  &rgb_ug RGB_COLOR_HSB(34,100,50)
-                                    &trans        &trans        &trans            &trans           &sys_reset
+                                    &trans        &trans        &trans            &to 0            &sys_reset
             >;
 
             label = "Setting";
